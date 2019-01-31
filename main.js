@@ -1,3 +1,4 @@
+//Сделайте обход дерева документа снизу вверх.
 
 const el = document.querySelector('.deepChild');
 

@@ -1,6 +1,12 @@
 var el = document.querySelector('.deepChild');
-while (el.className != 'parent') {
+
+
+
+function catchParent(el) {   
+  while (el.className != 'parent') {
   el = el.parentNode || el.parentElement;
   console.log(el);
 }
+        }
 
+catchParent(el);

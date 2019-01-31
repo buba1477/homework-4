@@ -1,6 +1,5 @@
-var el = document.querySelector('.deepChild');
 
-
+const el = document.querySelector('.deepChild');
 
 function catchParent(el) {   
   while (el.className != 'parent') {
@@ -8,5 +7,4 @@ function catchParent(el) {
   console.log(el);
 }
         }
-
 catchParent(el);

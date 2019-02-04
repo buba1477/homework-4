@@ -1,11 +1,10 @@
-//Сделайте обход дерева документа снизу вверх.
-
-const el = document.querySelector('.deepChild');
 
 function catchParent(el) {
-  while (el.className != 'parent') {
+  while (el.className != 'wrapper') {
   el = el.parentNode || el.parentElement;
-  console.log(el);
+
+console.log(el);
+
+  }
 }
-        }
-catchParent(el);
+ catchParent(el);

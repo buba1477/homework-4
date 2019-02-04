@@ -1,5 +1,11 @@
-var el = document.querySelector('.deepChild');
-while (el.className != 'wrapper') {
+//Сделайте обход дерева документа снизу вверх.
+
+const el = document.querySelector('.deepChild');
+
+function catchParent(el) {
+  while (el.className != 'parent') {
   el = el.parentNode || el.parentElement;
   console.log(el);
 }
+        }
+catchParent(el);
